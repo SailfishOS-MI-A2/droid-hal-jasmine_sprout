@@ -11,6 +11,24 @@
 
 %define droid_target_aarch64 1
 
+# want adreno quirks is required for browser at least, and other subtle issues
+%define android_config \
+#define WANT_ADRENO_QUIRKS 1\
+%{nil}
+
+%define straggler_files \
+  /bugreports \
+  /bt_firmware \
+  /cache \
+  /charger \
+  /dsp \
+  /firmware \
+  /product \
+  /sdcard \
+%{nil}
+
+%define makefstab_skip_entries /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
+
 %include rpm/dhd/droid-hal-device.inc
 
 # IMPORTANT if you want to comment out any macros in your .spec, delete the %
