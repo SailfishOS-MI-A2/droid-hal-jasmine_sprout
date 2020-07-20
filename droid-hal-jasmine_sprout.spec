@@ -25,6 +25,8 @@
   /firmware \
   /product \
   /sdcard \
+  /d \
+  /verity_key \
 %{nil}
 
 %define makefstab_skip_entries /dev/stune /dev/cpuset /sys/fs/pstore /dev/cpuctl
