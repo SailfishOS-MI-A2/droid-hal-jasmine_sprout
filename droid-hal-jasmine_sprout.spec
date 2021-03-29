@@ -20,10 +20,11 @@
   /bugreports \
   /bt_firmware \
   /cache \
-  /charger \
   /dsp \
   /firmware \
+  /persist \
   /product \
+  /product_services \
   /sdcard \
   /d \
   /verity_key \
