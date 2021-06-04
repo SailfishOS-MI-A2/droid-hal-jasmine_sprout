@@ -10,6 +10,7 @@
 %define installable_zip 1
 
 %define droid_target_aarch64 1
+%define android_version_major 10
 
 # want adreno quirks is required for browser at least, and other subtle issues
 %define android_config \
